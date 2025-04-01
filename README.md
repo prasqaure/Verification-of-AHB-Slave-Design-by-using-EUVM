@@ -84,12 +84,4 @@ The `ahb_test.d` file defines a **UVM-based testbench** written in the D program
 - The `ahb_sequence` defines a simple test that interacts with the AHB slave, triggering read/write operations and checking for proper responses.
 - The testbench outputs logs using `uvm_info` for debugging and status tracking.
 
-## Compilation and Simulation
 
-To compile and run the simulation for both the design and the UVM testbench, follow these steps:
-
-### 1. **Compiling the Verilog Design**:
-   The Verilog design can be compiled using **Icarus Verilog**. Make sure you have Icarus Verilog installed on your machine. To compile the `ahb_design.v` file, run the following command:
-
-   ```bash
-   iverilog -g2012 -o ahb_tb ahb_design.v
